@@ -1,0 +1,28 @@
+#login {
+    display: flex;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.title h1 {
+  justify-content: center;
+
+}
+
+
+.subm {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.forgot{
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot a {
+  font-size: smaller;
+}
