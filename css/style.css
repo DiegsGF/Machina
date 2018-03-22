@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 body{
@@ -60,4 +61,33 @@ font-family: "Lato";
 
 #central_logo{
   width: 130px;
+=======
+#login {
+    display: flex;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.title h1 {
+  justify-content: center;
+
+}
+
+
+.subm {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.forgot{
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot a {
+  font-size: smaller;
+>>>>>>> 4976c17d76733872cf9ceb1a9bf2816bbfab8bd6
 }
