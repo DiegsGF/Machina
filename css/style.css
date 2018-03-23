@@ -223,7 +223,7 @@ form-control {
   text-align: center;
 }
 
-<<<<<<< HEAD
+
 #main_body_l{
   background-color: rgba(207,216,222,0.5);
   background-size: cover;
@@ -258,7 +258,8 @@ form-control {
 .subm{
   display: flex;
   justify-content: center;
-=======
+}
+
 #container {
   display: flex;
   margin: 0px auto;
@@ -314,5 +315,5 @@ form-control {
 #speedChart {
 margin-top: 40px;
 align-self: center;
->>>>>>> 106ce6359f423186db5e34e315136d24f05cc07d
+
 }
