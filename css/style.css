@@ -245,4 +245,37 @@ form-control {
 
 .mostrar_graf  {
   cursor: pointer;
+  height: 20px;
+}
+
+#main_body_g {
+
+  background-size: cover;
+  background-position: 0px -130px;
+  height:;
+
+  display: flex;
+}
+
+#container_g {
+  display: flex;
+  margin: 0px auto;
+  margin-top: 30px;
+  align-content:;
+  width: auto;
+
+}
+.main_g {
+  background-color: rgba(207, 216, 220, 0.5);
+  background-size: cover;
+  height: 1000px;
+
+}
+
+.graf {
+  display: flex;
+}
+#speedChart {
+margin-top: 40px;
+align-self: center;
 }
