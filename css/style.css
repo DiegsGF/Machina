@@ -1,3 +1,67 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+  font-family: "Lato";
+}
+
+#navbar{
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-family: "Lato";
+}
+
+#logo_nav{
+  height: 50px;
+  margin: 0px 5px 0px 7px;
+}
+
+.nav_options{
+  margin: 11px 8px 0px 8px;
+  font-size: 17px;
+  color: rgba(0,0,0,.7);
+
+}
+
+#headder{
+  height: 60px;
+  background-color: rgba(96,125,139,.6);
+  border-bottom: 2px solid rgba(228,87,37,1);
+  box-shadow: 0px 1px 2px rgba(21,21,21,.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#login{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: transparent;
+  background-color: rgba(228,87,37,.9);
+  margin: 6px 15px 0px 0px;
+}
+
+#main_body{
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: 0px -130px;
+  height: 800px;
+  background-color: black;
+  display: flex;
+}
+
+#central_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+}
+
+#central_logo{
+  width: 130px;
+=======
 #login {
     display: flex;
 }
@@ -25,6 +89,7 @@
 
 .forgot a {
   font-size: smaller;
+>>>>>>> 4976c17d76733872cf9ceb1a9bf2816bbfab8bd6
 }
 
 
