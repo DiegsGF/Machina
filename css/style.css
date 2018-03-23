@@ -222,3 +222,23 @@ form-control {
   width: 60px;
   text-align: center;
 }
+
+#container {
+  display: flex;
+  margin: 0px auto;
+  margin-top: 30px;
+  align-content: space-around;
+  width: 270px;
+
+}
+
+
+
+#main_body_c{
+  background-color: rgba(207, 216, 220, 0.5);
+  background-size: cover;
+  background-position: 0px -130px;
+  height: 800px;
+
+  display: flex;
+}
