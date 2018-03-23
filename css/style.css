@@ -106,3 +106,119 @@ flex-direction: column;
 .inputs {
   margin-left: 6px;
 }
+
+#login {
+    display: flex;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.title h1 {
+  justify-content: center;
+
+}
+
+
+.subm {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.forgot{
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot a {
+  font-size: smaller;
+}
+
+
+
+
+
+.campos {
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.inputs {
+  margin-left: 6px;
+}
+
+.inputs {
+  margin-left: 6px;
+  width: auto;
+  text-align: center;
+
+
+}
+
+
+.reparacion {
+  width: 100px;
+}
+
+.horast {
+  width: 131px;
+}
+
+.diesel {
+  width: 80px;
+}
+
+
+select, input {
+    border: solid 1px grey;
+    border-radius: 3px;
+    font-size: 16px;
+    color: gray;
+    height: 30px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: solid 1px grey;
+    }
+  }
+
+form-control {
+  width: 80px;
+  text-align: center;
+}
+
+#maquinas {
+  width: auto;
+  text-align: center;
+}
+
+#maquinasid {
+  width: auto;
+  text-align: center;
+}
+
+#lluvia {
+  width: auto;
+  text-align: center;
+}
+
+#horas {
+  width: 45px;
+  text-align: center;
+}
+
+#reparacion {
+  width: 45px;
+  text-align: center;
+}
+#diesel {
+  width: 60px;
+  text-align: center;
+}
