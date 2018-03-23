@@ -242,3 +242,7 @@ form-control {
 
   display: flex;
 }
+
+.mostrar_graf  {
+  cursor: pointer;
+}
