@@ -396,3 +396,222 @@ z=a+b+c+d
 console.log(z);
 
 }
+
+//Graficas
+
+
+function graf5(){
+  var speedCanvas = document.getElementById("speedChart");
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+
+var dataFirst = {
+    label: "Meta",
+    data: [90, 90, 90,90, 90, 90, 90],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: 'rgba(0, 99, 132, 0.6)',
+    backgroundColor: 'transparent',
+    pointBorderColor: 'rgba(0, 99, 132, 0.6)',
+    pointBackgroundColor: 'rgba(0, 99, 132, 0.6)',
+    //pointRadius: 5,
+    pointHoverRadius: 5,
+    //pointHitRadius: 30,
+    //pointBorderWidth: 2,
+    pointStyle: 'rect'
+  };
+
+var dataSecond = {
+    label: "Eficiencia",
+    data: [94.2, 92.1, 91.5, 90.9, 89.2, 88.3, 87.6],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: 'purple',
+    backgroundColor: 'transparent',
+    pointBorderColor: 'purple',
+    pointBackgroundColor: 'purple',
+    //pointRadius: 2,
+    pointHoverRadius: 5,
+    //pointHitRadius: 15,
+    pointBorderWidth: 2
+  };
+
+var speedData = {
+  labels: ["ago 17", "sep 17", "oct 17", "nov 17", "dic 17", "ene 18", "feb 18"],
+  datasets: [dataFirst, dataSecond]
+};
+
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black'
+    }
+  }
+};
+
+var lineChart = new Chart(speedCanvas, {
+  type: 'line',
+  data: speedData,
+  options: chartOptions
+});
+}
+
+
+function graf6(){
+  var speedCanvas = document.getElementById("speedChart");
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+
+var dataZero1 = {
+    label: "Bajo",
+    data: [15, 15, 15,15, 15, 15, 15],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: 'red',
+    backgroundColor: 'transparent',
+    pointBorderColor: 'red',
+    pointBackgroundColor: 'red',
+    //pointRadius: 5,
+    pointHoverRadius: 5,
+    //pointHitRadius: 30,
+    //pointBorderWidth: 2,
+    pointStyle: 'rect'
+  };
+
+  var dataZero2 = {
+      label: "Medio",
+      data: [30, 30, 30,30, 30, 30, 30],
+      lineTension: 0.3,
+      fill: false,
+      borderColor: 'yellow',
+      backgroundColor: 'yellow',
+      pointBorderColor: 'yellow',
+      pointBackgroundColor: 'yellow',
+      //pointRadius: 5,
+      pointHoverRadius: 5,
+      //pointHitRadius: 30,
+      //pointBorderWidth: 2,
+      pointStyle: 'rect'
+    };
+
+
+var dataFirst = {
+    label: "Alto",
+    data: [25, 25, 25,25, 25, 25, 25],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: 'purple',
+    backgroundColor: 'transparent',
+    pointBorderColor: 'purple',
+    pointBackgroundColor: 'purple',
+    //pointRadius: 5,
+    pointHoverRadius: 5,
+    //pointHitRadius: 30,
+    //pointBorderWidth: 2,
+    pointStyle: 'rect'
+  };
+
+var dataSecond = {
+    label: "Consumo",
+    data: [16, 18, 21.5, 22.9, 32.4, 38.9, 37.6],
+    lineTension: 0.3,
+    fill: true,
+    borderColor: 'rgba(0, 99, 132, 0.6)',
+    backgroundColor: 'transparent',
+    pointBorderColor: 'rgba(0, 99, 132, 0.6)',
+    pointBackgroundColor: 'rgba(0, 99, 132, 0.6)',
+    //pointRadius: 2,
+    pointHoverRadius: 5,
+    //pointHitRadius: 15,
+    pointBorderWidth: 2
+  };
+
+var speedData = {
+  labels: ["ago 17", "sep 17", "oct 17", "nov 17", "dic 17", "ene 18", "feb 18"],
+  datasets: //[dataZero1,dataZero2]
+  [dataFirst, dataSecond]
+};
+
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black'
+    }
+  }
+};
+
+var lineChart = new Chart(speedCanvas, {
+  type: 'line',
+  data: speedData,
+  options: chartOptions
+});
+}
+
+
+function graf7(){
+  var densityCanvas = document.getElementById("speedChart");
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+
+var densityData = {
+  label: 'En qué porcentaje te ubicas',
+  data: [75, 85, 55,87, 39, 96,49, 73, 81],
+  backgroundColor: [
+    'rgba(0, 99, 132, 0.6)',
+    'rgba(30, 99, 132, 0.6)',
+    'rgba(60, 99, 132, 0.6)',
+    'rgba(90, 99, 132, 0.6)',
+    'rgba(120, 99, 132, 0.6)',
+    'rgba(150, 99, 132, 0.6)',
+    'rgba(180, 99, 132, 0.6)',
+    'rgba(210, 99, 132, 0.6)',
+    'rgba(240, 99, 132, 0.6)'
+  ],
+  borderColor: [
+    'rgba(0, 99, 132, 1)',
+    'rgba(30, 99, 132, 1)',
+    'rgba(60, 99, 132, 1)',
+    'rgba(90, 99, 132, 1)',
+    'rgba(120, 99, 132, 1)',
+    'rgba(150, 99, 132, 1)',
+    'rgba(180, 99, 132, 1)',
+    'rgba(210, 99, 132, 1)',
+    'rgba(240, 99, 132, 1)'
+  ],
+  borderWidth: 2,
+  hoverBorderWidth: 0
+};
+
+var chartOptions = {
+  scales: {
+    yAxes: [{
+      barPercentage: 0.5
+    }]
+  },
+  elements: {
+    rectangle: {
+      borderSkipped: 'left',
+    }
+  }
+};
+
+var barChart = new Chart(densityCanvas, {
+  type: 'horizontalBar',
+  data: {
+
+
+    labels: ["Barredora", "Bicompactadora", "Camion Pipa", "Retro Excavadora", "Excavadora", "Perforadoras", "Petrolizadoras", "Perfiladora"],
+    datasets: [densityData],
+  },
+  options: chartOptions
+});
+}
