@@ -325,12 +325,17 @@ var inputs="";
 for (var i=0;i<tipom.length;i++){
            cadena += "<option id='maquina' class='selector' value='' >" + tipom[i] + "</option>";
 
-inputs = "<select id='maquinas' onchange='dat()'>" +"<option value='' disabled selected>Tipo de máquina</option>" + cadena + "</select>"+
-        "<select id='maquinasid'>" +"<option value='' disabled selected>ID</option>" + "</select>"+
-        "<input type='date'>"+
-        "<div id='submit_container'>"+
-          "<button type='button' name='button' id='enviar' onclick=''>Siguiente</button>"+
-        "</div>";
+inputs = "<div class='campos'>Fecha<input class='inputs fecha' type='date'></div>"+
+        "<div class='campos'><select id='maquinas' class='inputs tipom' onchange='dat()'>" +"<option value='' disabled selected>Tipo de máquina</option>" + cadena + "</select></div>"+
+        "<div class='campos'><select id='maquinasid' class='inputs maqid'>" + "</select></div>"+
+        "<div class='campos'>Horas Trabajadas<input type='number' class='inputs horast' name='horas trabajadas' placeholder='Hrs. Trabajadas' min='0' max='24'/></div>"+
+        "<div class='campos'>Diesel<input type='number' class='inputs diesel' id='diesel' name='diesel' placeholder='Consumo' min='0' max=''/></div>"+
+        "<div class='campos'>Lluvia<select id='lluvia' class='inputs lluvia'>" +"<option value='' disabled selected>Si/No</option>" +
+        "<option value=''>Si</option>" + "<option value=''>No</option>" + "</select></div>"+
+        "<div class='campos'><input type='number' class='inputs reparacion' id='reparacion' name='reparacion' placeholder='Reparación' min='0' max='24'/></div>"+
+        "<div class='campos'><div id='submit_container'>"+
+        "<button type='button' name='button' id='enviar' onclick=''>Siguiente</button>"+
+        "</div></div>";
 
 document.getElementById('container').innerHTML = inputs;
 
@@ -351,7 +356,8 @@ console.log(e);
              idmaquina += "<option id='maquina' class='' value='' >" + maquina[i].Id + "</option>";
    }
  }
-document.getElementById('maquinasid').innerHTML=idmaquina;
+ idm="<option value='' disabled selected>ID</option>" + idmaquina;
+document.getElementById('maquinasid').innerHTML=idm;
 
 
 }

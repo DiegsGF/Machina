@@ -26,3 +26,19 @@
 .forgot a {
   font-size: smaller;
 }
+
+
+
+.main {
+display: flex;
+flex-direction: column;
+}
+
+.campos {
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.inputs {
+  margin-left: 6px;
+}
