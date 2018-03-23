@@ -223,7 +223,6 @@ form-control {
   text-align: center;
 }
 
-
 #main_body_l{
   background-color: rgba(207,216,222,0.5);
   background-size: cover;
@@ -316,4 +315,14 @@ form-control {
 margin-top: 40px;
 align-self: center;
 
+}
+
+button {
+  text-align: center;
+
+}
+
+.home_btn {
+  text-align: center;
+  tex
 }

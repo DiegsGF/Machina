@@ -337,7 +337,7 @@ inputs = "<div class='campos'>Fecha<input id='fecha' class='inputs fecha' type='
         "<button type='button' name='button' id='enviar' onclick='guardar'>Guardar</button>"+
         "</div></div>";
 
-document.getElementById('container').innerHTML = inputs;
+//document.getElementById('container').innerHTML = inputs;
 
 }
 }
