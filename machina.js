@@ -325,16 +325,16 @@ var inputs="";
 for (var i=0;i<tipom.length;i++){
            cadena += "<option id='maquina' class='selector' value='' >" + tipom[i] + "</option>";
 
-inputs = "<div class='campos'>Fecha<input class='inputs fecha' type='date'></div>"+
-        "<div class='campos'><select id='maquinas' class='inputs tipom' onchange='dat()'>" +"<option value='' disabled selected>Tipo de máquina</option>" + cadena + "</select></div>"+
-        "<div class='campos'><select id='maquinasid' class='inputs maqid'>" + "</select></div>"+
-        "<div class='campos'>Horas Trabajadas<input type='number' class='inputs horast' name='horas trabajadas' placeholder='Hrs. Trabajadas' min='0' max='24'/></div>"+
-        "<div class='campos'>Diesel<input type='number' class='inputs diesel' id='diesel' name='diesel' placeholder='Consumo' min='0' max=''/></div>"+
-        "<div class='campos'>Lluvia<select id='lluvia' class='inputs lluvia'>" +"<option value='' disabled selected>Si/No</option>" +
+inputs = "<div class='campos'>Fecha<input id='fecha' class='inputs fecha' type='date'></div>"+
+        "<div class='campos'><select id='maquinas' class='form-control inputs tipom' onchange='dat()'>" +"<option value='' disabled selected>Tipo de máquina</option>" + cadena + "</select></div>"+
+        "<div class='campos'><select id='maquinasid' class='form-control inputs maqid'>" + "</select></div>"+
+        "<div class='campos'>Horas Trabajadas<input type='number' id='horas' class='inputs horast' name='horas trabajadas' placeholder='Hrs' min='0' max='24'/></div>"+
+        "<div class='campos'>Diesel<input type='number' class='inputs diesel' id='diesel' name='diesel' placeholder='Litros' min='0' max=''/></div>"+
+        "<div class='campos'><select id='lluvia' class='form-control inputs lluvia'>" +"<option value='' disabled selected>Lluvia</option>" +
         "<option value=''>Si</option>" + "<option value=''>No</option>" + "</select></div>"+
-        "<div class='campos'><input type='number' class='inputs reparacion' id='reparacion' name='reparacion' placeholder='Reparación' min='0' max='24'/></div>"+
+        "<div class='campos'>Reparación<input type='number' class='inputs reparacion' id='reparacion' name='reparacion' placeholder='Hrs' min='0' max='24'/></div>"+
         "<div class='campos'><div id='submit_container'>"+
-        "<button type='button' name='button' id='enviar' onclick=''>Siguiente</button>"+
+        "<button type='button' name='button' id='enviar' onclick='guardar'>Guardar</button>"+
         "</div></div>";
 
 document.getElementById('container').innerHTML = inputs;
@@ -345,19 +345,54 @@ document.getElementById('container').innerHTML = inputs;
 function dat(){
 var barredora="";
 var idmaquina="";
-
+var z="";
 var tipomaquina = document.getElementById('maquinas');
-e = tipomaquina.options[tipomaquina.selectedIndex].text;
+a = tipomaquina.options[tipomaquina.selectedIndex].text;
 
-console.log(e);
+
+
 
   for (var i=0;i<maquina.length;i++){
-    if (e === maquina[i].Family) {
+    if (a === maquina[i].Family) {
              idmaquina += "<option id='maquina' class='' value='' >" + maquina[i].Id + "</option>";
    }
  }
  idm="<option value='' disabled selected>ID</option>" + idmaquina;
 document.getElementById('maquinasid').innerHTML=idm;
 
+
+
+}
+
+/*
+var fecha= document.getElementById('fecha').value;
+
+var maquinaid = document.getElementById('maquinasid');
+b = maquinaid.options[maquinaid.selectedIndex].text;
+
+var horast = document.getElementById('horas').value;
+c = horast
+
+var cdiesel = document.getElementById('diesel').value;
+d = cdiesel
+
+
+*/
+function guardar(){
+  var fecha= document.getElementById('fecha').value;
+
+  var maquinaid = document.getElementById('maquinasid');
+  b = maquinaid.options[maquinaid.selectedIndex].text;
+
+  var horast = document.getElementById('horas').value;
+  c = horast
+
+  var cdiesel = document.getElementById('diesel').value;
+  d = cdiesel
+
+var z="";
+
+z=a+b+c+d
+console.log(z);
 
 }

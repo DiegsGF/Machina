@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 body{
@@ -61,7 +60,8 @@ font-family: "Lato";
 
 #central_logo{
   width: 130px;
-=======
+}
+
 #login {
     display: flex;
 }
@@ -89,7 +89,6 @@ font-family: "Lato";
 
 .forgot a {
   font-size: smaller;
->>>>>>> 4976c17d76733872cf9ceb1a9bf2816bbfab8bd6
 }
 
 
