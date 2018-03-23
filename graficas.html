@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gráficas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="Chart.min.js">
+
+
+
+    </script>
+  </head>
+  <body>
+
+  <div id="headder">
+  <div id="navbar">
+
+
+    <div id="logo_nav">
+      <img src="images/logoMachina.svg" id="logo_nav">
+    </div>
+    <div class="nav_options">
+      Nuestros servicios
+    </div>
+    <div class="nav_options">
+      Quienes somos?
+    </div>
+    <div class="nav_options">
+      Contacto
+    </div>
+  </div>
+  
+  </div>
+  <div class="main_g">
+
+
+  <div id="main_body_g">
+
+
+
+    <div class="row" id="container_g">
+      <div class="col-sm-4 mostrar_graf" onclick="graf6()">
+        Consumo
+      </div>
+      <div class="col-sm-4 mostrar_graf" onclick="graf5()">
+        Rendimiento
+      </div>
+      <div class="col-sm-4 mostrar_graf" onclick="graf7()">
+        ¿Dónde estás?
+      </div>
+        <!--div id="columnchart_values" style="width: 800px; height: 300px;"></div-->
+        <div class="graf" style="">
+            <canvas id="speedChart" width="600" height="400"></canvas>
+        </div>
+    </div>
+</div>
+</div>
+  <script type="text/javascript" src="machina.js">
+
+  </script>
+  </body>
+</html>
