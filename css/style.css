@@ -222,3 +222,39 @@ form-control {
   width: 60px;
   text-align: center;
 }
+
+#main_body_l{
+  background-color: rgba(207,216,222,0.5);
+  background-size: cover;
+  background-position: 0px -130px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+#main_bod_container{
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+  margin: 0px auto;
+}
+
+.logo_center{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 40px;
+}
+
+.forgot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  text-align: center;
+}
+
+.subm{
+  display: flex;
+  justify-content: center;
+}

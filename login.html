@@ -1,72 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-  </head>
-<body>
-  <div id="main" class="container-fluid">
-    <div class="logo">
-      <nav class="navbar navbar-light bg-custom shadow">
-        <a class="navbar-brand" href="">
-        <img src="logot.png" alt="Logo" style="height: 160px"></a>
-      </nav>
-    </div>
+ <head>
+   <meta charset="utf-8">
 
-    <div class="container-fluid row" id="login">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4" id="loginput">
-        <div class="title">
-          <h1>Log in</h1>
-        </div>
-        <div class="user">
-          <div class="loginput">
-
-            <form class="">
-              <div class="form-group">
-                <label for="usuario">Usuario</label>
-                <input type="user" class="form-control" id="usuario" placeholder="Nombre de usuario"/>
-              </div>
-
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password"/>
-              </div>
-
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="recuerdame"/>
-                <label class="form-check-label" for="">
-                  Recuérdame
-                </label>
-              </div>
-
-              <div class="subm">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </div>
-            </form>
-
-            <div class="forgot">
-              <a class="crear" href="#">Crear cuenta</a>
-              <a class="forgotPassword" href="#">Olvidaste tu contraseña?</a>
-            </div>
-
-          </div>
+   <title>Machina</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="shortcut icon" href="images/logoMachina2.ico">
+ </head>
+ <body onload="datos()">
+   <div id="headder">
+   <div id="navbar">
 
 
-        </div>
+     <div id="logo_nav">
+       <img src="images/logoMachina.svg" id="logo_nav">
+     </div>
+     <div class="nav_options">
+       Nuestros servicios
+     </div>
+     <div class="nav_options">
+       Quienes somos?
+     </div>
+     <div class="nav_options">
+       Contacto
+     </div>
+   </div>
+   <div>
+     <button type="button" name="login" id="login">Log in</button>
+   </div>
+   </div>
+   <div id="main_body_l">
+<div class="main_bod_container">
 
-      </div>
+     <div id="main" class="container-fluid">
+       <div class="logo">
+         <div  class="logo_center">
 
-    </div>
+            <img src="images/logoMachina2.svg" id="logo_nav">
+         </div>
+       </div>
 
-    </div>
+         <div></div>
+         <div  id="loginput">
+
+           <div class="user">
+             <div class="loginput">
+
+
+                 <div class="form-group">
+                   <label for="usuario">Usuario</label>
+                   <input type="user" class="form-control" id="usuario" placeholder="Nombre de usuario"/>
+                 </div>
+
+                 <div class="form-group">
+                   <label for="password">Password</label>
+                   <input type="password" class="form-control" id="password" placeholder="Password"/>
+                 </div>
+
+              
+
+                 <div class="subm">
+                     <a href="captura.html" class="btn btn-primary"> Sign In</a>
+                 </div>
+
+
+               <div class="forgot">
+                 <a class="crear" href="#">Crear cuenta</a>
+                 <a class="forgotPassword" href="#">Olvidaste tu contraseña?</a>
+               </div>
+
+             </div>
+
+
+           </div>
+           </div>
+
+         </div>
+
+       </div>
+
+       </div>
+
+
+   </div>
 
 
 
 
-  <script type="text/javascript" src="action.js">
-  </script>
+
+   <script type="text/javascript" src="machina.js">
+   </script>
 </body>
 </html>
